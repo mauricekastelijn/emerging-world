@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
 # 1. Use an official slim Python runtime (current Python 3.12)
-FROM python:3.12-slim
+FROM python:3.13-slim
 
 # Install the Cisco Umbrella Root CA certificate
 # See # See https://docs.docker.com/engine/network/ca-certs/
