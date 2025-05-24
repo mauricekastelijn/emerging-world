@@ -1,0 +1,43 @@
+version: 2
+updates:
+
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build(deps): update "
+    groups:
+      actions:
+        patterns:
+          - "*"
+
+  - package-ecosystem: devcontainers
+    directory: "/"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build(deps): update "
+
+  - package-ecosystem: docker
+    directories:
+      - "."
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build(deps): update "
+    groups:
+      docker:
+        patterns:
+          - "*"
+
+  - package-ecosystem: pip
+    directory: "/"
+    schedule:
+      interval: weekly
+    commit-message:
+      prefix: "build(deps): update "
+    groups:
+      python-packages:
+        patterns:
+          - "*"

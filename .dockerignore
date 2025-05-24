@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Packaging/build
+build/
+dist/
+*.egg-info
+
+# Git
+.git
+
+# VSCode
+.vscode/
+
+# Local env
+.env
+
+# OS files
+.DS_Store
